@@ -1,0 +1,93 @@
+.main{
+    background-color: #CFF5E7;
+}
+
+.blockchain{
+    padding-top: 10%;
+    display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+}
+.image{
+    padding-bottom:85px;
+}
+.btn-outline-dark{
+   position :relative;
+   left:82.6%;
+   bottom:14.59rem;
+   width:8%;
+   height:8%;
+}
+.signup{
+text-decoration: none;  
+}
+.login{
+text-decoration: none;
+}
+
+.bg-image {
+
+    /* Add the blur effect */
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 2rem;
+   
+
+}
+
+
+.bg-text { 
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    padding-top: 34rem;
+    text-align: center;
+}
+.logo{
+    position:relative;
+    right: 85px;
+}
+.logo-1{
+    background-color:#CFF5E7 ;
+    position:relative;
+   padding-left:4.3rem;
+   
+}
+.one{
+    position:relative;
+    top:2.2rem;
+    left:1rem;
+}
+.two{
+        position:relative;
+        top:50px;
+        width: 70rem;
+        height: 270px;
+        border: 4px solid white;
+      
+}
+.text{
+    color:rgb(255, 255, 255);
+    padding-top: 2.4rem;
+    text-align: center;
+}
+.copyright{
+
+    margin-bottom:0;
+
+    text-align: center;
+}
