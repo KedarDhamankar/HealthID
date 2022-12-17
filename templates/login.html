@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@900&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/login_master.css') }}">
+</head>
+
+<body>
+   
+    <div id="login-window">
+        
+        <div id="login-box" class="glassy-dark-bg rounded-custom">
+            
+            <div id='logo'></div>
+            <h2 id="login-header" class="logo-font">Login</h2>
+            {% include 'includes/_messages.html' %}
+            <form class="my-3" method="POST">
+                <input class="input text-light full-opacity-bg" name="username" id="username" autoComplete="username"
+                    placeholder="Username" /><br /><br>
+                <input class="input text-light full-opacity-bg" type="password" name="password" id="password"
+                    autoComplete="current-password" placeholder="Password" /><br><br>
+                    <!-- Dropdown Section  -->
+                    <br>
+                    <div class="dropdown-section">
+                        <!-- <label  class="heading input text-light full-opacity-bg" for="drop-down">Choose a category :</label> -->
+                        <select name="drop-down" id="categories" class="input text-light full-opacity-bg">
+                            <option value="Category" class="category glassy-dark-bg rounded-custom">Choose a Category</option>
+                            <option value="Patient">Patient</option>
+                            <option value="Doctor">Doctor</option>
+                            <option value="Student">Student</option>
+                            <option value="Researcher">Researcher</option>
+                        </select>
+                        <br><br>
+    
+                    <!-- Dropdown Section  -->
+
+                    </div>
+                <div class="remember-section">
+                    <input type="checkbox" name="remember" id="remeber" />
+                    
+                    <label class="remember-me">Remember me</label>
+                    
+                </div>
+                <input class="submit-btn" type="submit" value="Submit" />
+            </form>
+        </div>
+    </div>
+    <script src="{{url_for('static',filename='vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{url_for('static',filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{url_for('static',filename='vendor/jquery-easing/jquery.easing.min.js')}}"></script>
+</body>
+
+</html>
