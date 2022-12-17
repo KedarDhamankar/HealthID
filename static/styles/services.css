@@ -1,0 +1,134 @@
+/* CHANGE THIS WHILE ADDING THE URL */
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@600&display=swap');
+/* SERVICES PAGE STYLING*/
+.services-heading {
+    /* CLASS NAME DEKHKE CHANGE KAR */
+    font-family: 'jeremy', monospace;
+    text-align: center;
+    font-size: 3.8rem;
+    padding-top:110px;
+    background-color: #CFF5E7;
+}
+.heading-title{
+    position:relative;
+    bottom:50px;
+}
+
+.info {
+    max-width: 100rem;
+    position: relative;
+    top: 8rem;
+    height: 90rem;
+}
+
+.outer-box {
+    align-items: center;
+    border-style: double;
+    position: relative;
+    width: 45%;
+    left: 30px;
+
+}
+
+.box-data {
+    padding: 0 2rem;
+    color: green;
+}
+
+.person-login {
+    margin: 2rem auto;
+    position: relative;
+    top: 13px;
+    background-color: rgb(0 0 0 / 0%);
+    border: 0.1rem solid green;
+    align-items: center;
+    color: green;
+    font-size: 1.2rem;
+}
+
+.login-person {
+    text-decoration: none;
+    position: relative;
+    bottom: 25px;
+}
+
+person-login:hover {
+    background-color: green;
+    color: #fff;
+}
+
+figure {
+    width: 500px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 7rem;
+    overflow: hidden;
+    transition: all 0.5s linear;
+}
+
+figure::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+figure:hover::after {
+    width: 100%;
+}
+
+figure:hover img {
+    transform: scale(1.2);
+}
+
+img {
+    max-width: 100%;
+    margin-top: 1.5rem;
+    height: 20rem;
+    padding-left: 15px;
+    padding-bottom: 17px;
+    transition: all 0.2s linear;
+}
+
+.box-2 {
+    position: relative;
+    left: 47.7rem;
+    bottom: 37.5rem;
+}
+
+.box-3 {
+    position: relative;
+    bottom: 31rem;
+}
+
+.box-4 {
+    position: relative;
+    left: 47.7rem;
+    bottom: 68.5rem;
+}
+.two-rows{
+    position:relative;
+    top:9rem;
+    width:90rem;
+    height:10rem;
+    background-color: #CFF5E7;
+}
+.bottom-description{
+    position:relative;
+    top:3.7rem;
+    padding-left:38px;
+    font-size:2.3rem;
+    /* CLASS NAME DEKHKE CHANGE KAR */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.home-btn{
+    position:relative;
+    left:83rem;
+    top:0.3rem;
+}

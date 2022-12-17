@@ -1,0 +1,124 @@
+/* CHANGE THIS WHILE ADDING THE URL */
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@600&display=swap');
+
+
+/* body{
+    height:10rem;
+} */
+/* HOME PAGE STYLING*/
+/* Home - Top Section Styling  */
+.topic{
+    display:inline;
+}
+.btn{
+    box-sizing: border-box;
+    border-radius:100px;
+}
+.link{
+    text-decoration: none;
+    color:green;
+}
+.link:hover{
+    color:rgb(1, 53, 1);
+}
+.home-btn{
+    position: relative;
+    left: 71rem;
+}
+.services-btn{
+    position: relative;
+    left:71.89rem;
+}
+.login-btn{
+    position: relative;
+    left:72.5rem;
+}
+.register-btn{
+    position: relative;
+    left:72.5rem;
+}
+.buttons{
+    position:relative;
+    bottom:100px;
+}
+.logo{
+    width:10%;
+}
+.header{
+    height:144.5px;
+    background-color: #CFF5E7;
+}
+
+
+
+
+
+/* Home - Mid Section Styling */
+.mid-container{
+    padding-top:5rem;
+}
+.grid{
+    display:flex;
+    gap:30%;
+}
+.content {
+    height: 150px;
+    position: relative;
+    left: 90px; 
+}
+.healthcare{
+    width:40%;
+    position:relative;
+    right:40px;
+}
+.title {
+    /* CLASS NAME DEKHKE CHANGE KAR */
+    font-family: 'luciano vergara', monospace; 
+    font-size: 4rem;
+    font: bold;
+    position: relative;
+    top: 40px;
+}
+.description{
+    position:relative;
+    top:65px;
+}
+
+
+
+
+
+/* Home - Bottom Section Styling */
+.footer{
+    height: 10rem;
+    background-color:#CFF5E7;
+}
+/* CHANGE THE BUTTON */
+.login-button{
+    width:100%;
+}
+/* CHANGE THE BUTTON */
+.grid-two-column{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:30%;
+    padding-left: 180px;
+    padding-top:65px; 
+}
+.register{
+    text-decoration: none;
+    color: green;
+    width:50%;
+    height:40px;
+}
+.footer-1{
+    position:relative;
+    left:42px;
+    height: 60px;
+    width: 200px;
+    /* CLASS NAME DEKHKE CHANGE KAR */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, cursive;
+    letter-spacing: 0.12rem;
+    font-weight:bold;
+}
+
