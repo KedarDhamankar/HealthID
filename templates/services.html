@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">
     <!-- BOOTSTRAP -->
@@ -11,48 +12,74 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
         </script>
     <!-- BOOTSTRAP -->
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/services.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/services.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/home.css') }}">
 
     <title>Services</title>
 </head>
 <body>
-<!-- TOP SECTION -->
     <div class="services">
         <h1 class="services-heading">
-            <div class="heading-title">SERVICES WE OFFER</div>
+            <!-- TOP SECTION -->
+            <div class="heading-title">OUR SERVICES
+            <ul class="navbar-btn">
+                <button type="button" class="btn btn-home">
+                    <li class="topic">
+                        <a href="home.html" class="link">Home</a>
+                    </li>
+                </button>
+            
+                <button type="button" class="btn btn-about">
+                    <li class="topic">
+                        <a href="#" class="link">About</a>
+                    </li>
+                </button>
+            
+                <!-- <button class="btn login-btn">
+                    <li class="login topic">
+                        <a href="login.html" class="link">Login</a>
+                    </li>
+                </button> -->
+            </ul>
+            </div>
+            <!-- TOP SECTION -->
             
         </h1>
 
         <div class="info two-columns">
             <div class="outer-box box-1">
             <div class="box">
-                <figure><img src="https://i.ibb.co/qnW2FbQ/profile.jpg" alt=""></figure>
-                <!-- <figure><img src="profile.jpeg" alt=""></figure> -->
+                <figure><img src="https://i.ibb.co/19W583T/patient.png" alt="" class="profile-pic"></figure>
             </div>
             <div class="box-data">
                 <h3 class="data-title-1">Patient</h3>
                 <p class="data-description-1">Erat nisl nulla luctus eget. Taciti cursus risus nostra id nullam fusce duis id netus mattis donec. Nec quam cursus
                 laoreet tempus mauris. Placerat quam quisque nec eget.
                 </p>
-                <a href="/register" class="login-person">
-                    <button class="btn btn-outline-success person-login">Sign Up</button>
+                <a href="/patregister" class="login-person">
+                    <button class="btn btn-lg btn-outline-success person-register">Register</button>
+                </a>
+                <a href="/login" class="login-person">
+                    <button class="btn btn-lg btn-outline-success person-login">Login</button>
                 </a>
             </div>
            </div>
 
         <div class="outer-box box-2">
             <div class="box">
-                <figure><img src="https://i.ibb.co/qnW2FbQ/profile.jpg" alt=""></figure>
-                <!-- <figure><img src="profile.jpeg" alt=""></figure> -->
+                <figure><img src="https://i.ibb.co/bHgjGRN/doctor.png" alt="" class="profile-pic"></figure>
             </div>
-            <div class="box-data">
+            <div class="box-data doctor-data">
                 <h3 class="data-title-1">Doctor</h3>
                 <p class="data-description-1">Erat nisl nulla luctus eget. Taciti cursus risus nostra id nullam fusce duis id
                     netus mattis donec. Nec quam cursus
                     laoreet tempus mauris. Placerat quam quisque nec eget.
                 </p>
-                <a href="/register" class="login-person">
-                    <button class="btn btn-outline-success person-login">Sign Up</button>
+                <a href="/docregister" class="login-person">
+                    <button class="btn btn-lg btn-outline-success person-register">Register</button>
+                </a>
+                <a href="/login" class="login-person">
+                    <button class="btn btn-lg btn-outline-success person-login">Login</button>
                 </a>
             </div>
         </div>
@@ -60,25 +87,28 @@
 
         <div class="outer-box box-3">
             <div class="box">
-                <figure><img src="https://i.ibb.co/qnW2FbQ/profile.jpg" alt=""></figure>
-                <!-- <figure><img src="profile.jpeg" alt=""></figure> -->
+                <figure><img src="https://i.ibb.co/5422MnD/admin.png" alt="" class="profile-pic"></figure>
             </div>
             <div class="box-data">
-                <h3 class="data-title-1">Student</h3>
+                <h3 class="data-title-1">Admin</h3>
                 <p class="data-description-1">Erat nisl nulla luctus eget. Taciti cursus risus nostra id nullam fusce duis id
                     netus mattis donec. Nec quam cursus
                     laoreet tempus mauris. Placerat quam quisque nec eget.
                 </p>
-                <a href="/register" class="login-person">
-                    <button class="btn btn-outline-success person-login">Sign Up</button>
+                <a href="./register.html" class="login-person">
+                    <button class="btn btn-lg btn-outline-success person-register">Register</button>
                 </a>
+                <a href="/login" class="login-person">
+                    <button class="btn btn-lg btn-outline-success person-login">Login</button>
+                </a>
+                
             </div>
         </div>
       
 
-        <div class="outer-box box-4">
+        <div class="outer-box box-4">   
             <div class="box">
-                <figure><img src="https://i.ibb.co/qnW2FbQ/profile.jpg" alt=""></figure>
+                <figure><img src="https://i.ibb.co/tm3M2t9/researcher.jpg" alt="" class="profile-pic"></figure>
             </div>
             <div class="box-data">
                 <h3 class="data-title-1">Researcher</h3>
@@ -86,9 +116,13 @@
                     netus mattis donec. Nec quam cursus
                     laoreet tempus mauris. Placerat quam quisque nec eget.
                 </p>
-                <a href="/register" class="login-person">
-                    <button class="btn btn-outline-success person-login">Sign Up</button>
+                <a href="/resregister" class="login-person">
+                    <button class="btn btn-lg btn-outline-success person-register">Register</button>
                 </a>
+                <a href="/login" class="login-person">
+                    <button class="btn btn-lg btn-outline-success person-login">Login</button>
+                </a>
+            </div>
             </div>
             </div>
             </div>
@@ -102,10 +136,7 @@
 <!-- BOTTOM SECTION -->
 <div class="bottom-section">
     <div class="two-rows">
-        <h2 class="bottom-description">Return to Home Page</h2>
-        <a href="/" class="home-btn">
-            <button class="btn btn-lg btn-outline-success home-button">Home</button>
-        </a>
+        
     </div>
 </div>
 

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url('./images/login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+
+}
+.container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px ;
+}
+/* span{
+    color: #008080;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 10 px 0 10px 0 ;
+} */
+header{
+    color: #008080;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+    font-weight: 500;
+    position: relative;
+    bottom: 4px;
+}
+.input-field{
+   display: flex; 
+   flex-direction: column;
+}
+.input{
+    height: 45px;
+    width: 26%;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 0 0 0 42px;
+    background: #008080;
+    color: azure;
+    position: relative;
+    left: 30.5rem;
+}
+i{
+    position: relative;
+    top: -31px;
+    left: 31.5rem;
+    color: azure;
+}
+
+::-webkit-input-placeholder{
+    color: azure;
+}
+.submit{
+    border: none;
+    border-radius: 15px;
+    font-size: 17px;
+    height: 45px;
+    outline: none;
+    width: 26%;
+    background: #08f26e;
+    cursor: pointer;
+    transition: .3s;
+    color: #008080;
+    position: relative;
+    left: 30.5rem;
+
+}
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px #008080;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    font-size: small;
+    color: #008080;
+    margin-top: 10px;
+    position: relative;
+    left: 26px;
+
+
+}
+.left{
+    display: flex;
+}
+label a{
+    color: #008080;
+    text-decoration: none;
+}
+
+/* nav bar */
+
+.topic {
+    display: inline;
+}
+
+.btn {
+    box-sizing: border-box;
+    border-radius: 100px;
+}
+
+.link {
+    text-decoration: none;
+    color: green;
+    font-size: 21px;
+}
+
+.link:hover {
+    color: rgb(1, 53, 1);
+}
+
+.home-btn {
+    position: relative;
+    left: 69.2rem;
+}
+
+.services-btn {
+    position: relative;
+    left: 71.89rem;
+}
+
+.about-btn {
+    position: relative;
+    left: 70.7rem;
+}
+
+.buttons {
+    position: relative;
+    bottom: 65px;
+    right: 45px;
+
+}
+
+.logo {
+    width: 5.7%;
+}
+
+.top {
+    height: 87px;
+    background-color: #9FE2BF;
+}

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="{{ url_for('static',filename='styles/register.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/patregister.css') }}">
     <link rel="stylesheet" href="boxicons/css/boxicons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,7 +34,7 @@
 <body>
     <!-- navbar -->
     <div class="top">
-        <img src="images/HealthIDlogo.png" class="logo">
+        <img src="https://i.ibb.co/0c2q8GB/Health-IDlogo.png" class="logo">
         <div class="buttons">
             <ul>
                 <button  class="btn home-btn ">
@@ -58,42 +58,33 @@
         </div>
     </div>
     <!-- login -->
+    <form action="" method="POST">
     <div class="box">
         <div class="container">
 
             <div class="top-header">
                
-                <header>Register Now! </header>
+                <header>Hello User, Register Now! </header>
                 
             </div>
 
             <div class="input-field">
-                <input type="text" class="input" placeholder="Name" required>
+              <input type="text" class="input" name="name" placeholder="Name" required="required" value={{request.form.name}}>
+              <i class="bx bx-user"></i>
+            </div>
+
+            <div class="input-field">
+                <input type="email" class="input" name="email" placeholder="Email" required="required" value={{request.form.email}}>
                 <i class="bx bx-user"></i>
             </div>
 
             <div class="input-field">
-                <input type="email" class="input" placeholder="Email" required>
-                <i class="bx bx-user"></i>
-            </div>
-
-            <div class="input-field">
-                <input type="text" class="input" placeholder="institute name" required>
-                <i class="bx bx-user"></i>
-            </div>
-           
-            <div class="input-field">
-                <input type="number" class="input" placeholder="ID" required>
-                <i class="bx bx-user"></i>
-            </div>
-
-            <div class="input-field">
-                <input type="password" class="input" placeholder="Password" required>
+                <input type="password" class="input" name="password" placeholder="Password" required="required" value={{request.form.password}}>
                 <i class="bx bx-lock-alt"></i>
             </div>
             
             <div class="input-field">
-                <input type="password" class="input" placeholder=" Confirm Password" required>
+                <input type="password" class="input" name="confirm" placeholder=" Confirm Password" required="required" value={{request.form.confirm}}>
                 <i class="bx bx-lock-alt"></i>
             </div>
 
@@ -113,6 +104,7 @@
 
         </div>
     </div>
+</form>
 
 </body>
 </html>

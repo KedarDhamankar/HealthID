@@ -93,7 +93,7 @@ def isnewtable(tableName):
 #check if user already exists
 def isnewuser(username):
     #access the users table and get all values from column "username"
-    users = Table("users", "name", "email", "username", "password")
+    users = Table("user", "name", "email", "password")
     data = users.getall()
     usernames = [user.get('username') for user in data]
 

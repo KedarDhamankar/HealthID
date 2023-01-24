@@ -1,38 +1,66 @@
 /* CHANGE THIS WHILE ADDING THE URL */
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 /* SERVICES PAGE STYLING*/
 .services-heading {
     /* CLASS NAME DEKHKE CHANGE KAR */
-    font-family: 'jeremy', monospace;
+    font-family: 'Chivo Mono', monospace;
     text-align: center;
     font-size: 3.8rem;
-    padding-top:110px;
     background-color: #CFF5E7;
 }
-.heading-title{
-    position:relative;
-    bottom:50px;
-}
-
 .info {
     max-width: 100rem;
     position: relative;
     top: 8rem;
-    height: 90rem;
+    height: 60.5rem;
 }
 
 .outer-box {
     align-items: center;
     border-style: double;
     position: relative;
-    width: 45%;
+    width: 30%;
     left: 30px;
-
+}
+.profile-pic{
+    width: 30%;
+    height: 30%;
 }
 
 .box-data {
     padding: 0 2rem;
-    color: green;
+    color: rgb(0, 0, 0);
+    
+    
+}
+.doctor-data{
+    position:relative;
+    bottom:10px;
+}
+.box-1{
+    position:relative;
+    bottom:70px;
+    left:11rem;
+}
+.box-2 {
+    position: relative;
+    left: 50rem;
+    bottom: 33.5rem;
+    height:469.5px;
+    
+}
+
+.box-3 {
+    position: relative;
+    bottom: 28rem;
+    left:11rem;
+}
+
+.box-4 {
+    position: relative;
+    left: 50rem;
+    bottom: 56.74rem;
 }
 
 .person-login {
@@ -95,23 +123,6 @@ img {
     padding-bottom: 17px;
     transition: all 0.2s linear;
 }
-
-.box-2 {
-    position: relative;
-    left: 47.7rem;
-    bottom: 37.5rem;
-}
-
-.box-3 {
-    position: relative;
-    bottom: 31rem;
-}
-
-.box-4 {
-    position: relative;
-    left: 47.7rem;
-    bottom: 68.5rem;
-}
 .two-rows{
     position:relative;
     top:9rem;
@@ -125,10 +136,54 @@ img {
     padding-left:38px;
     font-size:2.3rem;
     /* CLASS NAME DEKHKE CHANGE KAR */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Rubik 80s Fade';
 }
 .home-btn{
     position:relative;
     left:83rem;
     top:0.3rem;
 }
+.person-register{
+    width:30%;
+    position:relative;
+    top:14px;
+    border-width: 2px;
+}
+.person-login{
+    position:relative;
+    left:120px;
+    width:130px;
+    border-width: 2px;   
+}
+
+/* NAVBAR STYLING */
+.heading-title {
+    position: relative;
+    top:30px;
+    right: 25rem;
+}
+.navbar-btn{
+    position:relative;
+    width:250px;
+    left:95rem;
+    bottom: 80px;
+}
+.link{
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* NAVBAR STYLING */
+
+
+/* BUTTON LINK REMOVAL */
+.blueee{
+    text-decoration: none;
+    color:green;
+}
+.blueee:hover{
+    color:white;
+}
+
+/* BUTTON LINK REMOVAL */
+
