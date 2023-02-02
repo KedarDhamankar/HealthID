@@ -1,10 +1,10 @@
-# Health-ID
+# HealthID
 ![HealthIDlogo](https://user-images.githubusercontent.com/103985810/216312683-4221cd84-d7bf-4a2c-8d13-aa42f630d147.png)
 
 <div align="center">
    <br>This project aims to create a blockchain based database system for the peoples associated with the healthcare system. The most important objective was to keep the data of the patients secure and maintaining their privacy.
 <br>
-  CoC Inheritance 2022 || cntrl_alt_elite <br> <br>
+  CoC Inheritance 2022 || ctrl_alt_elite <br> <br>
 </div>
 <hr>
 
@@ -102,9 +102,9 @@ We hope that you already have git installed in your system.
 As shown here, the users can register through 2 different ports and thus, two different accounts would be created. For more users to be added, new tables will have to be linked and added in the app.py file.
 
 ## Important Links
-GitHub Repository: [Health-ID](https://github.com/KedarDhamankar/Health-ID)
+GitHub Repository: [HealthID](https://github.com/KedarDhamankar/Health-ID)
 
-Google Drive: [Health-ID_media](https://drive.google.com/drive/folders/1F7z-bLzj19IVpKnTMOuB2iTgU4BdQ5y7?usp=sharing)
+Google Drive: [HealthID_media](https://drive.google.com/drive/folders/1F7z-bLzj19IVpKnTMOuB2iTgU4BdQ5y7?usp=sharing)
 
 ## What we learned from this project
 * Rucha Patil-"Learnt front-end web development in HTML/CSS and Javascript framework and on a basic level the integration of front-end with back-end using flask and basics of database management using MySQL. Also got a glimpse of the functionality and implementation of a blockchain."
@@ -124,10 +124,10 @@ Google Drive: [Health-ID_media](https://drive.google.com/drive/folders/1F7z-bLzj
 * GPU support for data mining.
 
 ## Contributors
-* [Rucha Patil](https://github.com/Ruchapatil03)
-* [Kedar Dhamankar](https://github.com/KedarDhamankar)
-* [Yash Singavi](https://github.com/YashSingavi)
-* [Komal Sambhus](https://github.com/Komal0103)
+* [Rucha Patil](https://github.com/Ruchapatil03): rucha14patil@gmail.com
+* [Kedar Dhamankar](https://github.com/KedarDhamankar): kedard2004@gmail.com
+* [Yash Singavi](https://github.com/YashSingavi): ysingavi@gmail.com
+* [Komal Sambhus](https://github.com/Komal0103): komal.sambhus@gmail.com
 
 ## Mentors
 We are extremely grateful to our mentors for encouraging and guiding us throughout this project
