@@ -1,4 +1,4 @@
-# Health-ID
+# HealthID
 
 <h1 align="center">
   <a href="https://github.com/CommunityOfCoders/Inheritance-2022">
@@ -8,28 +8,28 @@
 <div align="center">
    <br>This project aims to create a blockchain based database system for the peoples associated with the healthcare system. The most important objective was to keep the data of the patients secure and maintaining their privacy.
 <br>
-  CoC Inheritance 2022 || cntrl_alt_elite <br> <br>
+  CoC Inheritance 2022 || ctrl_alt_elite <br> <br>
 </div>
 <hr>
 
 ## Table of Contents
-* [Introduction](https://github.com/KedarDhamankar/Health-ID/edit/main/README.md#introduction)
-  * [About Health-ID](https://github.com/KedarDhamankar/Health-ID/edit/main/README.md#about-health-id)
-  * [Tech-Stack](https://github.com/KedarDhamankar/Health-ID/edit/main/README.md#tech-stack)
-  * [File Structure](https://github.com/KedarDhamankar/Health-ID/edit/main/README.md#file-structure)
-* [Getting Started](https://github.com/KedarDhamankar/Health-ID/edit/main/README.md#getting-started)
-  * [Pre-Requisites](https://github.com/KedarDhamankar/Health-ID/edit/main/README.md#pre-requisites)
-  * [Installations](https://github.com/KedarDhamankar/Health-ID/edit/main/README.md#installations)
-  * [Operating MySQL Tables](https://github.com/KedarDhamankar/Health-ID/edit/main/README.md#operating-mysql-tables)
-  * [Usage](https://github.com/KedarDhamankar/Health-ID/edit/main/README.md#usage)
-* [What we learned from this project](https://github.com/KedarDhamankar/Health-ID/edit/main/README.md#what-we-learned-from-this-project)
-* [Future Scope](https://github.com/KedarDhamankar/Health-ID/edit/main/README.md#future-scope)
-* [Contributors](https://github.com/KedarDhamankar/Health-ID/edit/main/README.md#contributors)
-* [Mentors](https://github.com/KedarDhamankar/Health-ID/edit/main/README.md#mentors)
+* [Introduction](https://github.com/KedarDhamankar/HealthID/edit/main/README.md#introduction)
+  * [About HealthID](https://github.com/KedarDhamankar/HealthID/edit/main/README.md#about-health-id)
+  * [Tech-Stack](https://github.com/KedarDhamankar/HealthID/edit/main/README.md#tech-stack)
+  * [File Structure](https://github.com/KedarDhamankar/HealthID/edit/main/README.md#file-structure)
+* [Getting Started](https://github.com/KedarDhamankar/HealthID/edit/main/README.md#getting-started)
+  * [Pre-Requisites](https://github.com/KedarDhamankar/HealthID/edit/main/README.md#pre-requisites)
+  * [Installations](https://github.com/KedarDhamankar/HealthID/edit/main/README.md#installations)
+  * [Operating MySQL Tables](https://github.com/KedarDhamankar/HealthID/edit/main/README.md#operating-mysql-tables)
+  * [Usage](https://github.com/KedarDhamankar/HealthID/edit/main/README.md#usage)
+* [What we learned from this project](https://github.com/KedarDhamankar/HealthID/edit/main/README.md#what-we-learned-from-this-project)
+* [Future Scope](https://github.com/KedarDhamankar/HealthID/edit/main/README.md#future-scope)
+* [Contributors](https://github.com/KedarDhamankar/HealthID/edit/main/README.md#contributors)
+* [Mentors](https://github.com/KedarDhamankar/HealthID/edit/main/README.md#mentors)
   
 
 ## Introduction
-### About Health-ID
+### About HealthID
 We have used the blockchain technology which we have implemented through Flask-Python on the server side. It also uses the MySQL database for storing the user, appointment, prescription details and theses uploaded from the research institutes. This website can be used by the Patients, Doctors, Researchers and Organizations such as the hospitals and research institutes. The blockchain service has been displayed on the website using HTML/CSS and Javascript. We have obtained a plethora of knowledge about Blockchain, MySQL and in general, database management systems.
 
 ### Tech-Stack
