@@ -21,29 +21,36 @@ Backend
 4. JSON
 
 Code Editor
+
 Visual Studio Code
 
-###File Structure
+### File Structure
 
 ## Getting Started
-###Pre-Requisites
-* You must have the latest version of ![Python3](https://www.python.org/downloads/).
-* Since the website uses ![Flask](https://pypi.org/project/Flask/), this framework should be present.
+### Pre-Requisites
+* You must have the latest version of [Python3](https://www.python.org/downloads/).
+* Since the website uses [Flask](https://pypi.org/project/Flask/), this framework should be present.
 * You also have to install some modules such as passlib.hash, hashlib, wtforms, functool and sys if they are not already present in your system.
 * To connect your flask with your MySQL database, you require the flask_mysqldb module.
 
-###Installations
+### Installations
 * Install Flask
+
 `pip install flask`
+
 `pip install flask-mysqldb`
+
 `pip install passlib`
 
 * Install wtforms
+
 `pip install wtforms`
 
-* Install ![MySQL](https://www.mysql.com/downloads/)
+* Install [MySQL](https://www.mysql.com/downloads/)
 
-* Install ![Filestack]
+* Install [Filestack](https://www.filestack.com/docs/api/sdk/python/)
+
+`pip install --upgrade filestack-python`
 
 ### Operating MYSQL tables
 Open your MYSQL Command Line Client or enter the following command in your command prompt
@@ -51,7 +58,9 @@ Open your MYSQL Command Line Client or enter the following command in your comma
 On doing this, it would ask you for your password.
 
 `CREATE DATABASE healthid;`
+
 `USE healthid`
+
 You would recieve the message that the database has been changed.
 
 ### Usage
