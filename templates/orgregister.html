@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="{{ url_for('static',filename='styles/login.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/orgregister.css') }}">
     <link rel="stylesheet" href="boxicons/css/boxicons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +29,7 @@
         </script>
     <!-- BOOTSTRAP -->
     
-    <title>Login</title>
+    <title>Health-ID | Registration Page</title>
 </head>
 <body>
     <!-- navbar -->
@@ -39,7 +39,7 @@
             <ul>
                 <button  class="btn home-btn ">
                     <li class="topic">
-                        <a href="/home" class="link">Home</a>
+                        <a href="/" class="link">Home</a>
                     </li>
                 </button>
     
@@ -57,45 +57,45 @@
             </ul>
         </div>
     </div>
-
     <!-- login -->
+    <form action="" method="POST">
     <div class="box">
         <div class="container">
 
             <div class="top-header">
-                <span>Already have an account?</span>
-                <header>Login</header>
+                
+                <header>Hello Organisation, Register Now! </header>
                 
             </div>
 
-        {% include 'includes/_messages.html' %}    
-        <form method="POST" action="">
             <div class="input-field">
-                <select name="category"  class="input" value={{request.form.category}}>
-                    <option value="select" >Choose a category</option>
-                    <option value="Organisation">Organisation</option>
-                    <option value="Doctor">Doctor</option>
-                    <option value="Patient">Patient</option>
-                    <option value="Researcher">Researcher</option>
-                </select>
-                <i class="bx bx-search"></i>
+              <input type="text" class="input" name="organisation_name" placeholder="Organisation Name" required="required" value={{request.form.organisation_name}}>
+              <i class="bx bx-user"></i>
+            </div>
+            
+            <div class="input-field">
+                <input type="number" class="input" name="organisation_id" placeholder=" Organisation ID" name="institute_id" required="required" value={{request.form.organisation_id}}>
+                <i class="bx bx-user"></i>
             </div>
 
             <div class="input-field">
                 <input type="email" class="input" name="email" placeholder="Email" required="required" value={{request.form.email}}>
                 <i class="bx bx-user"></i>
             </div>
+            
+            <div class="input-field">
+              <input type="password" class="input" name="password" placeholder="Password" required="required" value={{request.form.password}}>
+              <i class="bx bx-lock-alt"></i>
+          </div>
+          
+          <div class="input-field">
+              <input type="password" class="input" name="confirm" placeholder=" Confirm Password" required="required" value={{request.form.confirm}}>
+              <i class="bx bx-lock-alt"></i>
+          </div>
 
             <div class="input-field">
-                <input type="password" class="input" name="password" placeholder="Password" required="required" value={{request.form.password}}>
-                <i class="bx bx-lock-alt"></i>
+                <input type="submit" class="submit" value="Submit">
             </div>
-
-            <div class="input-field">
-                <button type="submit" class="submit">Login</button>
-                <!-- <input type="submit" class="submit" value="Submit"> -->
-            </div>
-        </form>
 
             <div class="bottom">
                 <div class="left">
@@ -109,6 +109,7 @@
 
         </div>
     </div>
+    </form>
 
 </body>
 </html>

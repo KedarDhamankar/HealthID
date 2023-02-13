@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body{
+    background-color: #ffffff;
+
+}
+
+/* SIDEBAR SECTION */
+.bar{
+    display: flex;
+    position: relative;
+
+}
+.bar .sidebar{
+    position: fixed;
+    width: 225px;
+    height: 100%;
+    background: rgba(138, 234, 234, 0.375);
+    padding: 35px 0;
+
+
+}
+ .bar .sidebar h2{
+    color: #0D4F8B	;
+    /* text-transform:; */
+    text-align: center;
+    margin-bottom: 30px;
+ }
+
+ .bar .sidebar ul li{
+    padding: 30px;
+    font-family: 'Poppins',sans-serif;
+    border-bottom: 1px solid #bdb8d7;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(225,225,225,0.05);
+    transition: transform .2s; 
+    background: #CBF1F5;
+   
+
+ }
+
+ .bar .sidebar ul li a{
+   
+    color:#0D4F8B;
+    display:block;
+    font-size: 1.1rem;
+    font-weight: 500;
+   
+ }
+ i{
+    width: 30px;
+ }
+
+
+ .bar .sidebar ul li:hover{
+    background-color: #DFF6FF	;
+ }
+
+ .bar .sidebar ul li:hover a{
+    color:#1363DF;
+    transform: scale(1.1);
+
+ }
+
+ .bar .sidebar .social_media{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+ }
+
+ .bar .sidebar .social_media a{
+    display:block ;
+    width: 40px;
+    height: 45px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 5px;
+    color: #0D4F8B;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    
+    /* SIDEBAR SECTION */
+ }
+ .bar .main_content{
+    margin-left: 200px;
+    width: 100%;
+ }
+ html, body {
+   max-width: 100%;
+   overflow-x: hidden;
+}
+
+ html{
+   scroll-behavior: smooth;
+ }
+ .msg{
+   position: relative;
+   left: 10rem;
+   top: 18rem;
+   margin-left: 225px;
+   width: 65%;
+   
+}
+
+
+h1{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 4rem;
+   position: relative;
+   margin-left: 225px;
+   left: 1rem;
+   text-align: left;
+   top: 10px;
+
+}
+.der{
+   position:relative;
+   top:20px;
+}
+hr{
+   background-color: black;
+   position: relative;
+   top: 20px;
+   left: 14rem;
+   margin-left: 225px;
+   height: 2px;
+   width: 85rem;
+
+}
+.lsit{
+   width:255px;
+   position:relative;
+   right:30px;
+}
+
+.rot{
+   text-decoration: none;
+}
+.apt{
+   position: relative;
+   top: 60px;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 2rem;
+   margin-left: 225px;
+   justify-content: center;
+   display: flex;
+   /* align-items: center; */
+}
+
+ .apt1{
+   position: relative;
+   top: 14rem;
+   left: 46rem;
+   /* right: 5rem; */
+}
+.lines .apt{
+   position: relative;
+   top: 5rem;
+   /* left: 4rem; */
+}
+
+.pres .apt{
+   position: relative;
+   top: 12rem;
+   left: 1rem;
+   margin-bottom: 5rem;
+
+}
+
+.pat{
+   position:relative;
+   top:12rem;
+   width:55%;
+   left: 8rem;
+   border:dashed #0D4F8B;
+   height:23rem;
+}
+.mer{
+   position:relative;
+   top:17rem;
+   width:55%;
+   left: 8rem;
+   border:dashed #0D4F8B;
+   height:20rem;
+
+}
+
+.dabba1{
+   position: relative;
+   /* right: 5.5rem; */
+   top: 7rem;
+   left: 8rem;
+   width: 70%;
+   margin-bottom: 2rem;
+}
+.two{
+   width: 59.33334px;
+   position:relative;
+   left:27px;
+} 
+.link-mi{
+   text-decoration: none;
+   color:black;
+}

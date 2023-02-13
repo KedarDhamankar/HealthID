@@ -14,9 +14,11 @@ class Block():
     nonce = 0
     previous_hash = "0"*64
 
-    def __init__(self, data, number = 0):
+    def __init__(self, number = 0, previous_hash="0"*64, data=None, nonce=0):
         self.data = data
         self.number = number
+        self.previous_hash = previous_hash
+        self.nonce = nonce
 
     def hash(self):
         return updatehash(
@@ -69,19 +71,19 @@ class Blockchain():
 
         return True
 
-def main():
-    blockchain = Blockchain()
-    database = ["hello world", "Hi", "Bye", "LOL"]
+# def main():
+#     blockchain = Blockchain()
+#     database = ["hello world", "Hi", "Bye", "LOL"]
 
-    num = 0
-    for data in database:
-        num += 1
-        blockchain.mine(Block(data,num))
+#     num = 0
+#     for data in database:
+#         num += 1
+#         blockchain.mine(Block(data,num))
 
-    for block in blockchain.chain:
-        print(block)
+#     for block in blockchain.chain:
+#         print(block)
     
-    print(blockchain.isValid())
+#     print(blockchain.isValid())
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/orgdash.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/table.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/uploads.css') }}">
+    <script src="https://kit.fontawesome.com/fc6a73613f.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+    
+    <title>Health ID | Organization-Dashboard</title>
+</head>
+<body>
+   <!-- SIDEBAR SECTION -->
+    <div class="bar">
+        <div class="sidebar">
+            <h2>HealthID</h2>
+            
+            <ul class="lsit">
+                <li><a href="#doc"><i class="fa-solid fa-file-waveform"></i>Field Experts</a></li>
+                <li><a href="#upload_files"><i class="fa-solid fa-upload"></i>Patient Record</a></li>
+                <li><a href="#past_activity"><i class="fa-solid fa-book-medical"></i>Past Activity</a></li>
+                <li><a href="/logout"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+               
+            </ul>
+        
+            <div class="social_media">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    
+        <div class="main_content">
+            <div class="header">
+                <h1>Welcome {{session.get('organisation_name')}}!</h1>
+                <hr>
+            </div>
+            <div class="box">
+                <div class="container">
+                    {% include 'includes/_messages.html' %}
+                </div>
+            </div>
+            <div class="content">
+            <!-- <section class="doctor" id="doc">
+                <h2 class="apt">OUR EXPERT CONSULTANTS</h2>
+                
+            </section> -->
+            <section  class="upload" id="upload_files">
+                <h2 class="apt">PATIENT RECORDS</h2>
+                <center>
+                    <div class="card mb-3 card-ki-mkb-1">
+                        <div class="card-header">
+                            <i class="fas fa-table"></i>
+                            Patient Records</div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <th>Patient Name</th>
+                        <th>Description</th>
+                        <th>Remarks</th>
+                        <th>Prescription</th>
+                    </thead>
+                    <tbody>
+                        {% for record in records %}
+                        <tr>
+                            <td>{{record['patient_name']}}</td>
+                            <td>{{record['appoint_desc']}}</td>
+                            <td>{{record['remarks']}}</td>
+                            <td>{{record['prescription']}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                 </table>
+                </div>
+            </div>
+        </div>  
+                </center> 
+            </section>
+                <section class="upload" id="upload">
+                    <h2 class="apt">UPLOAD THESIS</h2>
+                    <center>
+                    <div class="damn">
+                    <form method="POST" action="" enctype="multipart/form-data" style="padding-top:44px; width:500px">
+                        <!-- <label for="paper_name">Paper Name :</label> -->
+                        Patient Email :
+                        <input type="text" name="patient_email" placeholder="Patient Email" required="required" value={{request.form.paper_name}}>
+                        <br>
+                        <br>
+                        Report Name :    
+                        <input type="text" class="idk" name="report_name" placeholder="Report Name" required="required" value={{request.form.paper_category}}>
+                        <br>
+                        <input type="file" name="myfile" id="myfile" class="reer" style="width:260px">
+                        <div class="tub">
+                            <button name="upload"  id="upload" class="btn-block btn-dark but"><i
+                                class="fa fa-fw fa-upload"></i> Upload</button> 
+                        </div>
+                                       <!-- <input type="submit" value="Submit"> -->
+                               </form>
+                           </div>
+                        <br> 
+                    <!-- </form> -->
+                   </div>
+                   </center>
+                </section>
+            <!-- </section> -->
+            
+            </div>
+        </div>
+
+        <div class="content">
+            <!-- <section class="doctor" id="doc">
+                <h2 class="apt">OUR EXPERT CONSULTANTS</h2>
+                
+            </section> -->
+            <section  class="upload" id="upload_files">
+                <h2 class="apt">PATIENT REPORTS</h2>
+                <center>
+                    <div class="card mb-3 card-ki-mkb-1">
+                        <div class="card-header">
+                            <i class="fas fa-table"></i>
+                            Patient Reports</div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <th>Patient Name</th>
+                        <th>Report Name</th>
+                        <th>Report</th>
+                        <th>Date</th>
+                    </thead>
+                    <tbody>
+                        {% for report in reports %}
+                        <tr>
+                            <td>{{report['patient_name']}}</td>
+                            <td>{{report['report_name']}}</td>
+                            <td> <button class="daba"><a href="{{report['report_url']}}">View</a></button></td>
+                            <td>{{report['upload_date']}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                 </table>
+                </div>
+            </div>
+        </div>  
+                </center>
+                </section>
+
+    
+    <!-- SIDEBAR SECTION -->
+
+    
+</body>
+</html>

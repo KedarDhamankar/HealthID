@@ -1,0 +1,90 @@
+.text-center{
+    text-align: center;
+}
+.dabba{
+    position:relative;
+    left:540px;
+    top:90px;
+    border:15px solid grey;
+    border-width:1px;;
+ 
+    height: 230px;
+    width: 450px;
+}
+.btn-block{
+    background: #0a0a0a;
+        background-image: -webkit-linear-gradient(top, #0a0a0a, #000000);
+        background-image: -moz-linear-gradient(top, #0a0a0a, #000000);
+        background-image: -ms-linear-gradient(top, #0a0a0a, #000000);
+        background-image: -o-linear-gradient(top, #0a0a0a, #000000);
+        background-image: linear-gradient(to bottom, #0a0a0a, #000000);
+        -webkit-border-radius: 7;
+        -moz-border-radius: 7;
+        border-radius: 7px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 10px 150px 10px 150px;
+        border: solid #000000 2px;
+        text-decoration: none;
+        position:relative;
+        top:40px;
+        left:40px;
+}
+ 
+.btn-block:hover {
+    background: #0b1c26;
+        background-image: -webkit-linear-gradient(top, #0b1c26, #444a42);
+        background-image: -moz-linear-gradient(top, #0b1c26, #444a42);
+        background-image: -ms-linear-gradient(top, #0b1c26, #444a42);
+        background-image: -o-linear-gradient(top, #0b1c26, #444a42);
+        background-image: linear-gradient(to bottom, #0b1c26, #444a42);
+        text-decoration: none;
+}
+.custom-file{
+    position:relative;
+    top:45px;
+    left:50px;
+    width:30px;
+ 
+}
+ 
+input[type="file"] {
+    position: relative;
+    background: transparent;
+    width: 115px;
+    height: 50px;
+    bottom: 50px;
+}
+.upload-btn-wrapper input[type=file] {
+    font-size: 10px;
+    position: relative;
+    left: 0;
+    bottom:60px;
+    opacity: 0; 
+ 
+}
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline;
+    right: -110px;
+    top: 25px;
+    /* height: 20px; */
+ 
+}
+.btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 10px;
+    font-weight: bold;
+    width: 111px;
+    height: 50px;
+    position:relative;
+    bottom:10px;
+ 
+ 
+}

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static',filename='styles/home.css') }}">
+    <!-- <link rel="stylesheet" href="home.css"> -->
+    <!-- <link rel="stylesheet" href="services.css"> -->
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -18,39 +20,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="loader.css"> -->
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/5abda3da4c.js" crossorigin="anonymous"></script>
+    <!-- FONT AWESOME -->
+   
     <title>BlockChain Website</title>
 </head>
 <body>
 
-
-    <!-- LOADER -->
-    <!-- <div class="loader">
-        <div class="ball"></div>
-        <div class="ball"></div>
-        <div class="ball"></div>
-        <div class="ball"></div>
-        <div class="ball"></div>
-        <div class="ball"></div>
-        <div class="ball"></div>
-    </div> -->
-    <!-- LOADER -->
 
 
 <!-- HEADER SECTION -->  
    <div class="header">
     <img src="https://i.ibb.co/0c2q8GB/Health-IDlogo.png" class="logo">
     <div class="buttons">
-    <ul>
+    <ul class="idk">
         <button type="button" class="btn home-btn ">
         <li class="topic">
-            <a href="/" class="link">Home</a>  
+            <a href="#home" class="link">Home</a>  
         </li>
         </button>
 
         <button class="btn about-btn">
         <li class="login topic">
-            <a href="/login" class="link">About</a>
+            <a href="#about" class="link">About</a>
         </li>
         </button>
 
@@ -69,8 +62,9 @@
 
 
 <!-- MIDDLE SECTION -->
+<section>
 
-    <div class="mid-container">
+    <div id="home"class="mid-container">
         <div class="grid">
         <div class="content">
         <h1 class="title">DATA MANAGEMENT SYSTEM</h1>
@@ -81,6 +75,26 @@
         <img src="https://i.ibb.co/ss4FJfM/healthcare.jpg"  class="healthcare">
         </div>
     </div>
+
+</section>
+
+<br><br>
+
+<section id=about>
+    <div  class="grid-ki-mkb">
+        <img src="https://i.ibb.co/ss4FJfM/healthcare.jpg" alt="" class="about-ki-mkb">
+        <div class="content-mkb">
+        <h1 class="title-ki-mkb">ABOUT</h1>
+        <p class="abt_content">To protect and promote the work of doctors and scientists,
+        so that the patient healthcare information collected by them is not lost on the vast platform such as internet,
+        we aim to bridge the stated gap and store them in a safe and secure way through blockchain technology. All this is done
+        keeping patient privacy as the prime focus.</p>
+        <!--  -->
+    </div>
+    </div>
+</section>
+
+
 <!-- MIDDLE SECTION -->
 
 
@@ -88,22 +102,18 @@
 
 
 <!-- FOOTER SECTION -->
-        <div class="footer">
-            <div class="grid-two-column">
-            <h3 class="footer-1">Get Started</h3>
-            <a href="/login" class="register">
-                <button class="btn btn-outline-success login-button">
-                Sign-Up/Login
-                </button>
-            </a>
-            </div>
-        </div>
-<!-- FOOTER SECTION -->
 
-<script>
-    $(window).on("load", function () {
-        $(".loader").fadeOut("slow");
-    })
-</script>
+ 
+<div class="footer">
+    <div class="contact">CONTACT US</div>
+        <div class="icons">
+            <a href="https://github.com/KedarDhamankar/Health-ID" class="bluee"><i class="fa-brands fa-github fa-2x"></i></a>
+            <a href="https://in.linkedin.com/" class="bluee"><i class="fa-brands fa-linkedin fa-2x"></i></a> 
+            <a href="https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&ifkv=AWnogHdMIvSsGXHX_-VrGLKGAU0B9SRoLf0j8zAJnmLbsPHCr-BPeCKi5vok6gX4giVWyVoRDpAwsg&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="bluee"><i class="fa-solid fa-envelope fa-2x"></i></a> 
+            <a href="https://www.instagram.com/coc_vjti/" class="bluee"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        </div>
+</div>
+
+<!-- FOOTER SECTION -->
 </body>
 </html>

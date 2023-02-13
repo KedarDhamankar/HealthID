@@ -2,10 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@600&display=swap');
 
 
-/* body{
-    height:10rem;
-} */
+html{
+    scroll-behavior: smooth;
+  }
+ 
 /* HOME PAGE STYLING*/
+
+
 /* Home - Top Section Styling  */
 .topic{
     display:inline;
@@ -22,18 +25,36 @@
 .link:hover{
     color:rgb(1, 53, 1);
 }
-.home-btn{
+.home-btn {
     position: relative;
     left: 69.2rem;
+    transition: transform .2s; 
 }
-.services-btn{
+ 
+.home-btn:hover {
+    transform: scale(1.1);
+}
+ 
+.services-btn {
     position: relative;
-    left:71.89rem;
+    left: 71.89rem;
+    transition: transform .2s; 
 }
-.about-btn{
+ 
+.services-btn:hover {
+    transform: scale(1.1);
+}
+ 
+.about-btn {
     position: relative;
-    left:70.7rem;
+    left: 70.7rem;
+    transition: transform .2s; 
 }
+ 
+.about-btn:hover {
+    transform: scale(1.1);
+}
+
 .buttons{
     position:relative;
     bottom:100px;
@@ -41,11 +62,20 @@
    
 }
 .logo{
-    width:10%;
+    width:8.7%;
 }
 .header{
-    height:144.5px;
+    height:144.3px;
     background-color: #CFF5E7;
+    width: 100%;
+    position:fixed;
+    box-shadow: 5px 5px 18px #888888;
+    z-index: 1;
+    height:16%;
+}
+.idk{
+    position:relative;
+    top:12px;
 }
 
 
@@ -54,11 +84,25 @@
 
 /* Home - Mid Section Styling */
 .mid-container{
+    
     padding-top:5rem;
+    position: static;
+    top:10rem;
+    /* border: 3px black; */
+    /* margin-bottom: 2rem; */
+    /* padding: 3rem; */
 }
 .grid{
     display:flex;
     gap:30%;
+    position:relative;
+    top:50px;
+}
+.grid-ki-mkb{
+    display:flex;
+    gap: 30%;
+    position: relative;
+    top:90px;
 }
 .content {
     height: 150px;
@@ -69,6 +113,7 @@
     width:40%;
     position:relative;
     right:40px;
+    height: 40%;
 }
 .title {
     /* CLASS NAME DEKHKE CHANGE KAR */
@@ -78,9 +123,31 @@
     position: relative;
     top: 40px;
 }
+.title-ki-mkb{
+    font-family: 'Chivo Mono', monospace;
+        font-size: 4rem;
+        font: bold;
+        position: relative;
+            top: 46px;
+            right:30px;
+    text-align: center;
+}
 .description{
     position:relative;
     top:65px;
+}
+.abt_content{
+   display:flex;
+   position: relative;
+   top: 50px;
+}
+.content-mkb{
+    position:relative;
+    right:88px;
+}
+.about-ki-mkb{
+    position:relative;
+    left:38px;
 }
 
 
@@ -91,6 +158,9 @@
 .footer{
     height: 10rem;
     background-color:#CFF5E7;
+    margin-top: 10rem;
+    position:relative;
+    top:19rem; 
 }
 /* CHANGE THE BUTTON */
 .about-button{
@@ -121,3 +191,54 @@
     font-weight:bold;
 }
 
+
+
+/* .about{
+    position: relative;
+    top:auto;
+    height: 90vh;
+
+}
+.abt_content{
+    position: relative;
+    width: auto;
+} */
+
+/* footer settings */
+
+.contact{
+    font-family: 'Prompt', sans-serif;
+    font-size:1.9rem;
+    font-weight: bold;
+    position:relative;
+    top:58px;
+    left:90px;
+    width:205px;
+}
+.icons{
+    width:2rem;
+    display:flex;
+    position:relative;
+    left:76rem;
+    top:15px;
+}
+.fa-github{
+    position:relative;
+    right:120px;
+    color:initial;
+}
+.fa-linkedin{
+    position: relative;
+    right: 80px;
+    color:initial;
+}
+.fa-envelope{
+    position: relative;
+    right: 40px;
+    color:initial;
+}
+.fa-instagram{
+    position: relative;
+    color:initial;  
+}
+/* footer settings */

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/patdash.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/form.css') }}">
+    <script src="https://kit.fontawesome.com/fc6a73613f.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+    <title>Dashboard</title>
+</head>
+
+<body>
+   <!-- SIDEBAR SECTION -->
+   <div class="bar">
+    <div class="sidebar">
+        <h2>HealthID</h2>
+        
+        <ul>
+            <li><a href="#appointment"><i class="fa-solid fa-file-waveform"></i>Appointment</a></li>
+            <li><a href="#upload_files"><i class="fa-solid fa-upload"></i>Upload Files</a></li>
+            <li><a href="#past_activity"><i class="fa-solid fa-book-medical"></i>Past Activity</a></li>
+            <li><a href="/logout"><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+           
+        </ul>
+    
+        <div class="social_media">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- <h1>Welcome back, {{session.get('name')}}</h1> -->
+    <div class="main_content">
+        <div class="header">
+            {% include 'includes/_messages.html' %}
+            <h1>Welcome {{session.get('name')}} ! </h1>
+            <hr>
+        </div>
+        <div class="content">
+        <section id="appointment">
+            <h2 class="apt">BOOK AN APPOINTMENT</h2>
+            <form method="POST">
+                <div class="outer-box">
+                    <!-- <div class="bingo"  placeholder="Hospital Name"> -->
+                        {{form.hospital_name(placeholder="Hospital Name", class="bingo")}}
+                    <!-- </div> -->
+                    <!-- <div class="bingo" placeholder="Doctor Name"> -->
+                        {{form.doctor_name(placeholder="Doctor Name", class="bingo")}}
+                    <!-- </div> -->
+                    <!-- <div class="bingo" placeholder="Appointment Date"> -->
+                        {{form.date(placeholder="Appointment Date", class="bingo")}}
+                    <!-- </div> -->
+                    <!-- <div class="bingo" placeholder="Appointment Time"> -->
+                        {{form.time(placeholder="Appointment Time", class="bingo")}}
+                    <!-- </div> -->
+                    <!-- <button class="register">Book Slot</button> -->
+                    <!-- <input type="submit" class="register" value="Book Slot"> -->
+                    <button class="register">Book Slot</button>
+                </div>
+            </form>
+        </section>
+        <section  class="upload" id="upload_files">
+            <h2 class="apt">UPLOAD PAST HISTORY</h2>
+            
+        </section>
+        <section class="activity" id="past_activity">
+            <h2 class="apt">THIS IS PAST ACTIVITY SECTION</h2>
+            
+        </section>
+        
+        </div>
+     </div>
+    </div>
+
+    <form method="POST" action="">
+        <div class="from-group"  placeholder="Hospital Name">
+          {{form.hospital_name(class="form-control")}}
+        </div>
+        <div class="from-group" placeholder="Doctor Name">
+          {{form.doctor_name(class="form-control")}}
+        </div>
+        <div class="from-group" placeholder="Date">
+          {{form.date(class="form-control")}}
+        </div>
+        <div class="from-group" placeholder="Time">
+          {{form.time(class="form-control")}}
+        </div>
+        </br>
+        <p><input type="submit" class="btn btn-primary" value="Send"></p>
+      </form>
+</body>
+</html>
