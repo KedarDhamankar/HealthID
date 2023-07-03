@@ -1,114 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="{{ url_for('static',filename='styles/login.css') }}">
-    <link rel="stylesheet" href="boxicons/css/boxicons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-        </script>
-    <!-- BOOTSTRAP -->
-    
-    <title>Login</title>
-</head>
-<body>
-    <!-- navbar -->
-    <div class="top">
-        <img src="https://i.ibb.co/0c2q8GB/Health-IDlogo.png" class="logo">
-        <div class="buttons">
-            <ul>
-                <button  class="btn home-btn ">
-                    <li class="topic">
-                        <a href="/home" class="link">Home</a>
-                    </li>
-                </button>
-    
-                <button class="btn about-btn">
-                    <li class="login topic">
-                        <a href="#" class="link">About</a>
-                    </li>
-                </button>
-    
-                <button class="btn services-btn">
-                    <li class="services topic">
-                        <a href="/services" class="link">Services</a>
-                    </li>
-                </button>
-            </ul>
-        </div>
-    </div>
+		<link rel="stylesheet" href="{{ url_for('static',filename='styles/login.css') }}" />
+		<link rel="stylesheet" href="boxicons/css/boxicons.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" />
 
-    <!-- login -->
-    <div class="box">
-        <div class="container">
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+		<!-- BOOTSTRAP -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+		<!-- BOOTSTRAP -->
 
-            <div class="top-header">
-                <span>Already have an account?</span>
-                <header>Login</header>
-                
-            </div>
+		<title>Login</title>
+	</head>
+	<body>
+		<!-- navbar -->
+		<div class="top">
+			<img src="https://i.ibb.co/0c2q8GB/Health-IDlogo.png" class="logo" />
+			<div class="buttons">
+				<ul>
+					<button class="btn home-btn">
+						<li class="topic">
+							<a href="/home" class="link">Home</a>
+						</li>
+					</button>
 
-        {% include 'includes/_messages.html' %}    
-        <form method="POST" action="">
-            <div class="input-field">
-                <select name="category"  class="input" value={{request.form.category}}>
-                    <option value="select" >Choose a category</option>
-                    <option value="Organisation">Organisation</option>
-                    <option value="Doctor">Doctor</option>
-                    <option value="Patient">Patient</option>
-                    <option value="Researcher">Researcher</option>
-                </select>
-                <i class="bx bx-search"></i>
-            </div>
+					<button class="btn about-btn">
+						<li class="login topic">
+							<a href="#" class="link">About</a>
+						</li>
+					</button>
 
-            <div class="input-field">
-                <input type="email" class="input" name="email" placeholder="Email" required="required" value={{request.form.email}}>
-                <i class="bx bx-user"></i>
-            </div>
+					<button class="btn services-btn">
+						<li class="services topic">
+							<a href="/services" class="link">Services</a>
+						</li>
+					</button>
+				</ul>
+			</div>
+		</div>
 
-            <div class="input-field">
-                <input type="password" class="input" name="password" placeholder="Password" required="required" value={{request.form.password}}>
-                <i class="bx bx-lock-alt"></i>
-            </div>
+		<!-- login -->
+		<div class="box">
+			<div class="container">
+				<div class="top-header">
+					<h5>Already have an account?</h5>
+					<header>Login</header>
+				</div>
 
-            <div class="input-field">
-                <button type="submit" class="submit">Login</button>
-                <!-- <input type="submit" class="submit" value="Submit"> -->
-            </div>
-        </form>
+				{% include 'includes/_messages.html' %}
+				<form method="POST" action="">
+					<div class="input-field">
+						<select name="category" class="input" value="{{request.form.category}}">
+							<option value="select">Choose a category</option>
+							<option value="Organisation">Organisation</option>
+							<option value="Doctor">Doctor</option>
+							<option value="Patient">Patient</option>
+							<option value="Researcher">Researcher</option>
+						</select>
+						<i class="bx bx-search"></i>
+					</div>
 
-            <div class="bottom">
-                <div class="left">
-                    <input type="checkbox" id="check">
-                    <label for="check"> Remember Me</label>
-                </div>
-                <div class="right">
-                    <label><a href="#">Forgot Password?</a></label>
-                </div>
-            </div>
+					<div class="input-field">
+						<input type="email" class="input" name="email" placeholder="Email" required="required" value="{{request.form.email}}" />
+						<i class="bx bx-user"></i>
+					</div>
 
-        </div>
-    </div>
+					<div class="input-field">
+						<input type="password" class="input" name="password" placeholder="Password" required="required" value="{{request.form.password}}" />
+						<i class="bx bx-lock-alt"></i>
+					</div>
 
-</body>
+					<center>
+						<div class="rememberme">
+							<input type="checkbox" id="check" />
+							<label for="check" class="rememberlabel"> Remember Me</label>
+						</div>
+					</center>
+
+					<div class="input-field">
+						<button type="submit" class="submit">Login</button>
+						<!-- <input type="submit" class="submit" value="Submit"> -->
+					</div>
+					<center>
+						<div class="forgotpass">Forgot Password?</div>
+					</center>
+				</form>
+			</div>
+		</div>
+	</body>
 </html>
